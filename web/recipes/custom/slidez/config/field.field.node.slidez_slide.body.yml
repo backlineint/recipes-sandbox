@@ -1,0 +1,24 @@
+uuid: 23cc74e9-f480-4623-b28c-dbe0c532a1e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.slidez_slide
+  module:
+    - text
+id: node.slidez_slide.body
+field_name: body
+entity_type: node
+bundle: slidez_slide
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

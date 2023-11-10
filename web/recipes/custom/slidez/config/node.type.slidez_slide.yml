@@ -1,0 +1,18 @@
+uuid: 5783b684-50d4-4a79-b303-89ae64323f91
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Slide
+type: slidez_slide
+description: 'A single slide in a slide presentation.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

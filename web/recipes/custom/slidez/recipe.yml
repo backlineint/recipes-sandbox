@@ -4,7 +4,3 @@ type: "Site"
 
 install:
   - view_transitions
-# config:
-#   import:
-#     node: '*'
-

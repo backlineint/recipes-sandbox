@@ -1,0 +1,28 @@
+uuid: fe79d31b-12fc-44a1-a0a1-571c69a2b2e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slidez_slide.body
+    - node.type.slidez_slide
+  module:
+    - text
+    - user
+id: node.slidez_slide.default
+targetEntityType: node
+bundle: slidez_slide
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
