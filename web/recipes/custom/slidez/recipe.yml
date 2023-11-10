@@ -1,0 +1,10 @@
+name: "Slidez"
+description: "Configures Drupal to run a slide presentation"
+type: "Site"
+
+install:
+  - view_transitions
+# config:
+#   import:
+#     node: '*'
+

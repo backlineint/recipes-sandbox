@@ -1,0 +1,16 @@
+{
+    "name": "drupal/slidez",
+    "description": "Configures Drupal to run a slide presentation",
+    "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Brian Perry",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/view_transitions": "^1.0@alpha'"
+    }
+}

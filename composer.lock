@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7490700fa343d4557da7aaced4bc6565",
+    "content-hash": "a89e3f818f4df12f01ed53a8f0ab5666",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1505,6 +1505,50 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core."
+        },
+        {
+            "name": "drupal/view_transitions",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/view_transitions.git",
+                "reference": "1.0.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/view_transitions-1.0.0-alpha2.zip",
+                "reference": "1.0.0-alpha2",
+                "shasum": "a5164747cd832b45d9d8481b591ecd5101720c50"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-alpha2",
+                    "datestamp": "1695780995",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "brianperry",
+                    "homepage": "https://www.drupal.org/user/2304500"
+                }
+            ],
+            "description": "Enable cross-page transitions using the view transitions API.",
+            "homepage": "https://www.drupal.org/project/view_transitions",
+            "support": {
+                "source": "https://git.drupalcode.org/project/view_transitions"
+            }
         },
         {
             "name": "drush/drush",
