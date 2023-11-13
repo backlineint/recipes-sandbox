@@ -1,0 +1,22 @@
+name: slidez
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - slidez/base
+  - slidez/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - slidez/user
+  core/drupal.dropbutton:
+    - slidez/dropbutton
+  core/drupal.dialog:
+    - slidez/dialog
+  file/drupal.file:
+    - slidez/file
+  core/drupal.progress:
+    - slidez/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.1.6'
