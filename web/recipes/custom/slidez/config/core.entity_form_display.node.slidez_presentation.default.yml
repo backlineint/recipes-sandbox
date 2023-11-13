@@ -1,35 +1,34 @@
-uuid: 2a278ca1-461b-4e26-9736-ad0089390209
+uuid: 1fe01786-63d2-4013-acee-c77f3ccdb956
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.slidez_slide.body
-    - node.type.slidez_slide
+    - field.field.node.slidez_presentation.field_slidez_slides
+    - node.type.slidez_presentation
   module:
     - path
-    - text
 _core:
-  default_config_hash: Q4gB9zPrKcj6cmjUWEOWgVCfXH-lJJZ8U1kjvxeKIE4
-id: node.slidez_slide.default
+  default_config_hash: 4wJra8rcS6oZJoD28haoH_YnvY7KHSDRqXDvxHxrl_w
+id: node.slidez_presentation.default
 targetEntityType: node
-bundle: slidez_slide
+bundle: slidez_presentation
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_slidez_slides:
+    type: entity_reference_autocomplete
+    weight: 122
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

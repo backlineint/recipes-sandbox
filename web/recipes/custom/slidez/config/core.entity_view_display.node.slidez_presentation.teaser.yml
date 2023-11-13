@@ -1,0 +1,24 @@
+uuid: fd9ecd31-7ce1-4acf-b412-dfb31ef2922d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slidez_presentation.field_slidez_slides
+    - node.type.slidez_presentation
+  module:
+    - user
+_core:
+  default_config_hash: vxUPEpxj-jPClobazCQ5kfR_XoleZ6Naluh_PmgMt5g
+id: node.slidez_presentation.teaser
+targetEntityType: node
+bundle: slidez_presentation
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_slidez_slides: true

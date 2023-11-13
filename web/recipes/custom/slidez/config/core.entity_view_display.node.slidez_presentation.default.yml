@@ -1,0 +1,30 @@
+uuid: d2657b65-d68e-4ef4-a694-1fdfc58f8676
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slidez_presentation.field_slidez_slides
+    - node.type.slidez_presentation
+  module:
+    - user
+_core:
+  default_config_hash: _0BaYw6B-r_LK4lxKlfbbABwQ2sZPEZhrLtmfviXpsY
+id: node.slidez_presentation.default
+targetEntityType: node
+bundle: slidez_presentation
+mode: default
+content:
+  field_slidez_slides:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

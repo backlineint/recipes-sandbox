@@ -9,6 +9,8 @@ dependencies:
   module:
     - text
     - user
+_core:
+  default_config_hash: VZIH6itpHjFpL9eVPfgI_38eGC_AGVu9mP8biU36rtE
 id: node.slidez_slide.teaser
 targetEntityType: node
 bundle: slidez_slide

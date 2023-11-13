@@ -7,6 +7,8 @@ dependencies:
     - node.type.slidez_slide
   module:
     - text
+_core:
+  default_config_hash: ySe2F2yrVannnMY6BI5BvCCtTP2CeKeSgDUsi8qvOvI
 id: node.slidez_slide.body
 field_name: body
 entity_type: node

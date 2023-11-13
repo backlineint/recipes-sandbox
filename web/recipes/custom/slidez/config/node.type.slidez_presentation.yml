@@ -1,4 +1,4 @@
-uuid: 5783b684-50d4-4a79-b303-89ae64323f91
+uuid: bab94f37-5267-4d1d-b8e2-d0a96fd023fb
 langcode: en
 status: true
 dependencies:
@@ -10,10 +10,10 @@ third_party_settings:
       - main
     parent: 'main:'
 _core:
-  default_config_hash: tyeYLGmcILLA0c5E8YAu2dz9MfMY1m7je7pqzCJYfeQ
-name: Slide
-type: slidez_slide
-description: 'A single slide in a slide presentation.'
+  default_config_hash: ZGLOf8QMR-jrU7Mj6J7PkfLiqkpWc6ISYH2CELMONCQ
+name: Presentation
+type: slidez_presentation
+description: 'A slide presentaton.'
 help: ''
 new_revision: true
 preview_mode: 1
