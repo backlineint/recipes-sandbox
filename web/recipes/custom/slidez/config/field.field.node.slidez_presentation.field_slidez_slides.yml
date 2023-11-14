@@ -7,7 +7,7 @@ dependencies:
     - node.type.slidez_presentation
     - node.type.slidez_slide
 _core:
-  default_config_hash: 6ZeSrrbPwKTbQSKjy-H4NC--4u-qmh_Sj9iqXxYqtsw
+  default_config_hash: '-URLy7sxuZiU0I0jDNCPsQToAhahjTlVmwYHTV47npw'
 id: node.slidez_presentation.field_slidez_slides
 field_name: field_slidez_slides
 entity_type: node

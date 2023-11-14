@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: 5Y_LxguZ2FjVBDt0IZKUrtxDVvpOJrIyvFkRsOpj7eo
+  default_config_hash: l2wS7VNl7hWBlQKPz3BPCr1iJEHQRs88ji2HXPBhbxM
 id: node.slidez_slide.body
 field_name: body
 entity_type: node
