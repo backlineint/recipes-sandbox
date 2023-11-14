@@ -14,19 +14,33 @@
   * see https://open-props.style/ for more info.
   */
 
-/* :root {
-    font-family: var(--font-sans);
-} */
-
-/* Layout */
-
-/* main {
-    max-width: var(--size-lg);
-    margin: auto;
+:root {
+    --size-header-1: var(--size-content-3);
 }
 
-.main-layout {
+*+* {
+    margin-top: 1.5em;
+}
+
+/* Really this is <slidez-presentation> */
+body {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: var(--size-8);
-} */
+}
+
+body>* {
+    grid-area: 1 / 1;
+}
+
+.dialog-off-canvas-main-canvas {
+    display: grid;
+    place-items: center;
+    place-self: center;
+    gap: var(--size-3);
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    bottom: var(--size-5);
+    right: var(--size-5);
+}
