@@ -9,7 +9,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: '-zYtiJfM984onaCUzjbUfASabyihslk_hE6H14qI9dE'
+  default_config_hash: CbMiZlUcEZZcCpzRtsKrLsh97u25xaVmr4np59d2alg
 id: node.slidez_slide.default
 targetEntityType: node
 bundle: slidez_slide

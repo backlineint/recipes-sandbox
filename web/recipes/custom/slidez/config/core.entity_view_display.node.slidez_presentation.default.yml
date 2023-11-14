@@ -8,7 +8,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: _0BaYw6B-r_LK4lxKlfbbABwQ2sZPEZhrLtmfviXpsY
+  default_config_hash: 4hYQ5tzAqsHr4qQP94koiuTWznGFWzK3jRICVeb6ju0
 id: node.slidez_presentation.default
 targetEntityType: node
 bundle: slidez_presentation

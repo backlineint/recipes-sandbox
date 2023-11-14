@@ -1,0 +1,25 @@
+uuid: 95d96ecb-d945-477d-9176-e91c40e98a54
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - slidez
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: slidez_site_branding
+theme: slidez
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

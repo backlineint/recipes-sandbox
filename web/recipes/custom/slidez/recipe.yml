@@ -4,3 +4,10 @@ type: "Site"
 
 install:
   - view_transitions
+  - slidez
+
+config:
+  actions:
+    system.theme:
+      simple_config_update:
+        default: 'slidez'

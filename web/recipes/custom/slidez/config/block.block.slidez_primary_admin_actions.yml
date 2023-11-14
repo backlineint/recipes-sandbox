@@ -1,0 +1,20 @@
+uuid: 10625556-b1b8-4789-bcba-7a0370c67116
+langcode: en
+status: true
+dependencies:
+  theme:
+    - slidez
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: slidez_primary_admin_actions
+theme: slidez
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

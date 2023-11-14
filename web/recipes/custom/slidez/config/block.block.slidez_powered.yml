@@ -1,0 +1,22 @@
+uuid: 51e40c16-7b8c-4ef5-aad9-a44f92b21ae4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - slidez
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: slidez_powered
+theme: slidez
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

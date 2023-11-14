@@ -1,0 +1,22 @@
+uuid: 0c0f5c03-8a4e-40e0-8a47-4f7f15602c77
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - slidez
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: slidez_help
+theme: slidez
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
