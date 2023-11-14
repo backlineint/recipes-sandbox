@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Base open props imports.
+ */
+
+@import "https://unpkg.com/open-props";
+
+/* optional imports that use the props */
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+
+/*
+  * Root variables. You're encouraged to change these as you see fit.
+  * see https://open-props.style/ for more info.
+  */
+
+/* :root {
+    font-family: var(--font-sans);
+} */
+
+/* Layout */
+
+/* main {
+    max-width: var(--size-lg);
+    margin: auto;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: var(--size-8);
+} */
