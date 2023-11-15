@@ -5,7 +5,7 @@ dependencies:
   module:
     - node
 _core:
-  default_config_hash: b2UHzaa22fk7iu7cXmcDkCKHztjyYfnJqwTA4WknDOk
+  default_config_hash: hLaOxX7s3XAex2sv4AryLcbwAOAb96eCzO2CzuXw9iw
 id: node.field_slidez_slides
 field_name: field_slidez_slides
 entity_type: node

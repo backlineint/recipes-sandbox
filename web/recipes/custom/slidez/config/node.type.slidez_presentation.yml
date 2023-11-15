@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 _core:
-  default_config_hash: p3iC_vB8zXeQkqgvurCc0-qCZpf_NEMYg5Czubovu-I
+  default_config_hash: FyW4NayzJAOXOpk83uzrW8r-HGzfHXSHVbvGM9msKG4
 name: Presentation
 type: slidez_presentation
 description: 'A slide presentaton.'

@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 _core:
-  default_config_hash: 6ZQ7NiJK1tYr66F4gCLCVHYR1gQrWQnMyj2t1ia2fp8
+  default_config_hash: Rt_vqNIhIDgfaukUUil3_qsud8YUmU4idNidLb1yCDc
 name: Slide
 type: slidez_slide
 description: 'A single slide in a slide presentation.'

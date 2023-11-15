@@ -10,7 +10,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: hXEWM6Lv_SjxB2d9NN02v0iCPNcJfsl7D3Ay8u4GJ-A
+  default_config_hash: XiMI4HMdVboKWcpgO63UL_TBNlv8npjEDPMLjkfSrr8
 id: slidez_presentation
 label: Presentation
 module: views

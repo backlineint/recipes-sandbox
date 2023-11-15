@@ -1,7 +1,11 @@
 {
     "name": "drupal/slidez",
     "description": "Configures Drupal to run a slide presentation",
-    "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
+    "keywords": [
+        "recipe",
+        "Drupal recipes",
+        "drupal recipe"
+    ],
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -11,6 +15,6 @@
         }
     ],
     "require": {
-        "drupal/view_transitions": "^1.0@alpha'"
+        "drupal/view_transitions": "^1.0@alpha"
     }
 }
