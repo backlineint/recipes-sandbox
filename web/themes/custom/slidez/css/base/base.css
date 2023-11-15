@@ -15,13 +15,57 @@
   */
 
 :root {
-    --size-header-1: var(--size-content-3);
+    /* --size-header-1: var(--size-content-3); */
 }
 
 /* Refactoring - css nesting. */
 
-slidez-presentation *+* {
-    margin-top: 1.5em;
+slidez-slide {
+    --brand: color(display-p3 0 1 .75);
+    --gray-chroma: .01;
+    --gray-hue: 270;
+
+    --surface-1: var(--gray-15);
+    --surface-2: var(--gray-14);
+    --surface-3: var(--gray-10);
+    --surface-4: var(--gray-9);
+
+    --text-1: var(--gray-1);
+    --text-2: var(--teal-1);
+
+    @media (prefers-color-scheme: light) {
+        --brand: color(display-p3 1 0 1);
+
+        --surface-1: var(--gray-0);
+        --surface-2: var(--gray-2);
+        --surface-3: var(--gray-3);
+        --surface-4: var(--gray-4);
+
+        --text-1: var(--gray-14);
+        --text-2: var(--gray-11);
+    }
+
+    & *+* {
+        margin-top: var(--size-3);
+    }
+
+    & h1 {
+        font-size: var(--font-size-8);
+    }
+
+    & p {
+        font-size: var(--font-size-4);
+        color: var(--text-2);
+    }
+}
+
+slidez-presentation {
+    display: grid;
+    height: 97vh;
+}
+
+slidez-presentation>* {
+    grid-area: 1 / 1;
 }
 
 slidez-presentation li {
@@ -36,14 +80,6 @@ slidez-presentation nav {
     position: fixed;
     bottom: var(--size-5);
     right: var(--size-5);
-}
-
-slidez-presentation {
-    display: grid;
-}
-
-slidez-presentation>* {
-    grid-area: 1 / 1;
 }
 
 slidez-presentation slidez-slide {
