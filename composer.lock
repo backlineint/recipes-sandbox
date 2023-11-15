@@ -1855,17 +1855,17 @@
         },
         {
             "name": "drupal/view_transitions",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/view_transitions.git",
-                "reference": "1.0.0-alpha2"
+                "reference": "1.0.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/view_transitions-1.0.0-alpha2.zip",
-                "reference": "1.0.0-alpha2",
-                "shasum": "a5164747cd832b45d9d8481b591ecd5101720c50"
+                "url": "https://ftp.drupal.org/files/projects/view_transitions-1.0.0-alpha3.zip",
+                "reference": "1.0.0-alpha3",
+                "shasum": "f48d5281f899ec0966c3388d3b04a1d008de6785"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -1873,8 +1873,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-alpha2",
-                    "datestamp": "1695780995",
+                    "version": "1.0.0-alpha3",
+                    "datestamp": "1700064108",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
