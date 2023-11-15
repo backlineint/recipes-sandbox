@@ -1,11 +1,8 @@
-uuid: 80c2b817-7b81-417b-89f6-694a24a9067f
 langcode: en
 status: true
 dependencies:
   theme:
     - slidez
-_core:
-  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
 id: slidez_primary_local_tasks
 theme: slidez
 region: highlighted

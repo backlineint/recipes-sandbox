@@ -1,4 +1,3 @@
-uuid: bab94f37-5267-4d1d-b8e2-d0a96fd023fb
 langcode: en
 status: true
 dependencies:
@@ -9,8 +8,6 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-_core:
-  default_config_hash: FyW4NayzJAOXOpk83uzrW8r-HGzfHXSHVbvGM9msKG4
 name: Presentation
 type: slidez_presentation
 description: 'A slide presentaton.'

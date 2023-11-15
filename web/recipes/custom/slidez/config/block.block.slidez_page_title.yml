@@ -1,11 +1,8 @@
-uuid: 03a428b5-494d-4596-b6ea-605febc5ffe0
 langcode: en
 status: true
 dependencies:
   theme:
     - slidez
-_core:
-  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
 id: slidez_page_title
 theme: slidez
 region: sidebar_first

@@ -1,4 +1,3 @@
-uuid: 5783b684-50d4-4a79-b303-89ae64323f91
 langcode: en
 status: true
 dependencies:
@@ -9,8 +8,6 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-_core:
-  default_config_hash: Rt_vqNIhIDgfaukUUil3_qsud8YUmU4idNidLb1yCDc
 name: Slide
 type: slidez_slide
 description: 'A single slide in a slide presentation.'

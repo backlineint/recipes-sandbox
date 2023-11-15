@@ -1,4 +1,3 @@
-uuid: ec342aaa-36cf-42d5-be06-1c5a3ebb2b29
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - search
   theme:
     - slidez
-_core:
-  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
 id: slidez_search_form_narrow
 theme: slidez
 region: primary_menu

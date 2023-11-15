@@ -1,4 +1,3 @@
-uuid: bab882df-65d8-4e41-8306-174dcfc07fd7
 langcode: en
 status: true
 dependencies:
@@ -9,8 +8,6 @@ dependencies:
     - node
     - text
     - user
-_core:
-  default_config_hash: XiMI4HMdVboKWcpgO63UL_TBNlv8npjEDPMLjkfSrr8
 id: slidez_presentation
 label: Presentation
 module: views

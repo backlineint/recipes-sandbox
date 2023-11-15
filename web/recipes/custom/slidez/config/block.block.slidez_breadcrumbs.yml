@@ -1,4 +1,3 @@
-uuid: 571b33c3-52a4-4753-84ce-b58903d812eb
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - system
   theme:
     - slidez
-_core:
-  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: slidez_breadcrumbs
 theme: slidez
 region: breadcrumb

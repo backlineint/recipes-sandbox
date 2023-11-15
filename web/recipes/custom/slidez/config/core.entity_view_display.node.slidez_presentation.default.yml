@@ -1,4 +1,3 @@
-uuid: d2657b65-d68e-4ef4-a694-1fdfc58f8676
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
     - node.type.slidez_presentation
   module:
     - user
-_core:
-  default_config_hash: UmzFXzuRRsv8hkzQE8XoJUFSyEEcVi-zFcTsP_k5JeQ
 id: node.slidez_presentation.default
 targetEntityType: node
 bundle: slidez_presentation

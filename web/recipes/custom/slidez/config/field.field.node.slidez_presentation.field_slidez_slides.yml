@@ -1,4 +1,3 @@
-uuid: 83899139-72d9-4548-8fa8-3d923cd040af
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - field.storage.node.field_slidez_slides
     - node.type.slidez_presentation
     - node.type.slidez_slide
-_core:
-  default_config_hash: hcR720s11ypN_hN6YadTpMwjBiDVxOaXx4JXux4RKJo
 id: node.slidez_presentation.field_slidez_slides
 field_name: field_slidez_slides
 entity_type: node
