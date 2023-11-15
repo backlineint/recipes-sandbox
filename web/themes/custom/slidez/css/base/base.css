@@ -46,16 +46,24 @@ slidez-slide {
     }
 
     & *+* {
-        margin-top: var(--size-3);
+        margin-top: var(--size-2);
     }
 
     & h1 {
         font-size: var(--font-size-8);
+        margin: 0;
     }
 
     & p {
         font-size: var(--font-size-4);
         color: var(--text-2);
+    }
+
+    & .box {
+        border-radius: var(--radius-2);
+        border: 2px solid var(--pink-5);
+        /* was --color-2 */
+        box-shadow: var(--shadow-6);
     }
 }
 
@@ -91,7 +99,7 @@ slidez-presentation slidez-slide {
 }
 
 /* Example element transiton */
-/* slidez-slide .views-field-title h1 {
+/* slidez-slide h1 {
     display: inline;
     view-transition-name: title;
 } */
