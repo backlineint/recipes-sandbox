@@ -18,30 +18,35 @@
     --size-header-1: var(--size-content-3);
 }
 
-/* Refactoring - scope rules to components, nest rules. */
+/* Refactoring - css nesting. */
 
-body:not(.user-logged-in) *+* {
+slidez-presentation *+* {
     margin-top: 1.5em;
 }
 
-/* Really this is <slidez-presentation> */
-body:not(.user-logged-in) {
-    display: grid;
-}
-
-body:not(.user-logged-in) li {
+slidez-presentation li {
     text-align: start;
 }
 
-body:not(.user-logged-in) img {
+slidez-presentation img {
     margin: 1.5em auto 0 auto;
 }
 
-body:not(.user-logged-in)>* {
+slidez-presentation nav {
+    position: fixed;
+    bottom: var(--size-5);
+    right: var(--size-5);
+}
+
+slidez-presentation {
+    display: grid;
+}
+
+slidez-presentation>* {
     grid-area: 1 / 1;
 }
 
-body:not(.user-logged-in) .dialog-off-canvas-main-canvas {
+slidez-presentation slidez-slide {
     display: grid;
     place-items: center;
     place-self: center;
@@ -49,8 +54,8 @@ body:not(.user-logged-in) .dialog-off-canvas-main-canvas {
     text-align: center;
 }
 
-body:not(.user-logged-in) nav {
-    position: fixed;
-    bottom: var(--size-5);
-    right: var(--size-5);
-}
+/* Example element transiton */
+/* slidez-slide .views-field-title h1 {
+    display: inline;
+    view-transition-name: title;
+} */
