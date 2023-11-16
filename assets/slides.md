@@ -33,3 +33,17 @@ View Transitions:
 </p>
 
 ---
+
+Overview:
+
+<h1>
+    Drupal API Client Project
+</h1>
+<ul>
+    <li>
+        JavaScript packages to source data from common Drupal APIs
+    </li>
+    <li>
+        Offered under the Drupal namespace on NPM (hopefully)
+    </li>
+</ul>

@@ -62,7 +62,7 @@ slidez-slide {
     place-self: center;
     gap: var(--size-3);
     text-align: center;
-    max-inline-size: var(--size-content-3);
+    max-inline-size: 70ch;
 
     & *+* {
         margin-top: var(--size-2);
@@ -77,13 +77,15 @@ slidez-slide {
     & h1 {
         font-size: var(--font-size-8);
         margin: 0;
-        /* max-inline-size: var(--size-header-1); */
+        max-inline-size: var(--size-content-1);
     }
 
-    & p {
+    & p,
+    li {
         font-size: var(--font-size-4);
         color: var(--text-2);
-        max-inline-size: var(--size-content-2);
+        /* max-inline-size: var(--size-content-2); */
+        margin: var(--size-2) auto 0 auto;
     }
 
     & .box {
