@@ -9,16 +9,28 @@
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://unpkg.com/open-props/buttons.min.css";
 
-/*
-  * Root variables. You're encouraged to change these as you see fit.
-  * see https://open-props.style/ for more info.
-  */
+slidez-presentation {
+    display: grid;
+    height: 97vh;
 
-:root {
-    /* --size-header-1: var(--size-content-3); */
+    &>* {
+        grid-area: 1 / 1;
+    }
+
+    & li {
+        text-align: start;
+    }
+
+    & img {
+        margin: 1.5em auto 0 auto;
+    }
+
+    & nav {
+        position: fixed;
+        bottom: var(--size-5);
+        right: var(--size-5);
+    }
 }
-
-/* Refactoring - css nesting. */
 
 slidez-slide {
     --brand: color(display-p3 0 1 .75);
@@ -45,18 +57,33 @@ slidez-slide {
         --text-2: var(--gray-11);
     }
 
+    display: grid;
+    place-items: center;
+    place-self: center;
+    gap: var(--size-3);
+    text-align: center;
+    max-inline-size: var(--size-content-3);
+
     & *+* {
         margin-top: var(--size-2);
+    }
+
+    /* h1, h2, h3, h4, h5, h6, p, small, blockquote, li */
+    & h1,
+    p {
+        text-wrap: balance;
     }
 
     & h1 {
         font-size: var(--font-size-8);
         margin: 0;
+        /* max-inline-size: var(--size-header-1); */
     }
 
     & p {
         font-size: var(--font-size-4);
         color: var(--text-2);
+        max-inline-size: var(--size-content-2);
     }
 
     & .box {
@@ -67,39 +94,29 @@ slidez-slide {
     }
 }
 
-slidez-presentation {
-    display: grid;
-    height: 97vh;
-}
-
-slidez-presentation>* {
-    grid-area: 1 / 1;
-}
-
-slidez-presentation li {
-    text-align: start;
-}
-
-slidez-presentation img {
-    margin: 1.5em auto 0 auto;
-}
-
-slidez-presentation nav {
-    position: fixed;
-    bottom: var(--size-5);
-    right: var(--size-5);
-}
-
-slidez-presentation slidez-slide {
-    display: grid;
-    place-items: center;
-    place-self: center;
-    gap: var(--size-3);
-    text-align: center;
+.path-presentation {
+    & a#main-content {
+        display: none;
+    }
 }
 
 /* Example element transiton */
 /* slidez-slide h1 {
     display: inline;
     view-transition-name: title;
+} */
+
+/* Graveyard */
+
+/* slidez-presentation>* {
+    grid-area: 1 / 1;
+} */
+
+/*
+  * Root variables. You're encouraged to change these as you see fit.
+  * see https://open-props.style/ for more info.
+  */
+
+/* :root {
+    --size-header-1: var(--size-content-3);
 } */
