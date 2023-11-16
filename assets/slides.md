@@ -59,3 +59,24 @@ Pitchburgh:
 <p>
     Funded for 10K!
 </p>
+
+---
+
+10K Question:
+
+<h1>
+    The $10,000.00 Question
+</h1>
+<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f911/512.gif" alt="🤑" width="250" height="250">
+<p>
+    Why does Drupal need an API Client?
+</p>
+
+---
+
+NPM Tells a Story:
+
+<h1>
+    NPM Tells a Story
+</h1>
+<img src="/sites/default/files/inline-images/drupal_npm.png" data-entity-uuid="487c4268-af64-4e0e-8e7e-7862ee0e618b" data-entity-type="file" alt="A search for Drupal on NPM" width="750" height="750" class="box">
