@@ -88,6 +88,10 @@ slidez-slide {
         margin: var(--size-2) auto 0 auto;
     }
 
+    & strong {
+        color: var(--brand, var(--link));
+    }
+
     & .box {
         border-radius: var(--radius-2);
         border: 2px solid var(--pink-5);
