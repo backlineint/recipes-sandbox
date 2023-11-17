@@ -54,6 +54,8 @@ slidez-slide {
     --text-1: var(--gray-1);
     --text-2: var(--teal-1);
 
+    --link-visited: var(--brand);
+
     @media (prefers-color-scheme: light) {
         --brand: color(display-p3 1 0 1);
 
@@ -131,22 +133,7 @@ slidez-slide {
 }
 
 /* Example element transiton */
-/* slidez-slide h1 {
+slidez-slide h1 {
     display: inline;
     view-transition-name: title;
-} */
-
-/* Graveyard */
-
-/* slidez-presentation>* {
-    grid-area: 1 / 1;
-} */
-
-/*
-  * Root variables. You're encouraged to change these as you see fit.
-  * see https://open-props.style/ for more info.
-  */
-
-/* :root {
-    --size-header-1: var(--size-content-3);
-} */
+}

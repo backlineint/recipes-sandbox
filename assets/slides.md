@@ -212,3 +212,51 @@ Funding Commitment:
         Like SOWs? <a href="https://docs.google.com/document/d/1-_7PN9p0LSUIbZa-7EkLmdIO7kswSF65IY012yoWRis/edit#heading=h.k9vbodx1ps94" target="_blank">Here's ours.</a>
     </p>
 </aside>
+
+---
+
+Multiple Clients:
+
+<h1>
+    A design to support multiple clients
+</h1>
+<ul>
+  <li>API Client Base Class</li>
+  <li>Specific client implementations extend this class</li>
+</ul>
+<aside><a href="https://codesandbox.io/s/drupal-api-client-poc-tz8k42" target="_blank">Our Earliest Demo!</a></aside>
+
+---
+
+Extendable Base:
+
+<h1>
+    An extendable base
+</h1>
+<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4ab/512.gif" alt="💫" width="250" height="250">
+<p>
+    A developer could...
+</p>
+<ul>
+    <li>
+        Extend the base class to quickly create a GraphQL client
+    </li>
+    <li>
+        Publish a json-api-client that automatically uses a specific state management solution
+    </li>
+    <li>
+        Use only our individual authentication utilities
+    </li>
+    <li>
+        Bundle the json-api-client in an Astro starter
+    </li>
+</ul>
+
+---
+
+Supporting use case:
+
+<h1>
+    Just this week...
+</h1>
+<img class="box" src="/sites/default/files/inline-images/extend-slack.png" data-entity-uuid="4f41eb41-5f11-4218-9e71-d9b30f74c2af" data-entity-type="file" alt="A slack message about a possible use case">
