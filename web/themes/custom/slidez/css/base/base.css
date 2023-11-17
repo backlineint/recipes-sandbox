@@ -9,6 +9,15 @@
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://unpkg.com/open-props/buttons.min.css";
 
+/* aside {
+    font-size: var(--font-size-3);
+    background-color: color-mix(in srgb, var(--brand), transparent 95%);
+    border: 1px solid var(--brand);
+    border-radius: var(--radius-round);
+    padding-inline: var(--size-7);
+    padding-block: var(--size-3);
+} */
+
 slidez-presentation {
     display: grid;
     height: 97vh;
@@ -65,7 +74,7 @@ slidez-slide {
     max-inline-size: 70ch;
 
     & *+* {
-        margin-top: var(--size-2);
+        margin-top: var(--size-3);
     }
 
     /* h1, h2, h3, h4, h5, h6, p, small, blockquote, li */
@@ -92,11 +101,26 @@ slidez-slide {
         color: var(--brand, var(--link));
     }
 
-    & .box {
+    & .box,
+    pre {
         border-radius: var(--radius-2);
         border: 2px solid var(--pink-5);
         /* was --color-2 */
         box-shadow: var(--shadow-6);
+    }
+
+    & aside {
+        display: inline-block;
+        font-size: var(--font-size-3);
+        /* background-color: color-mix(in srgb, var(--brand), transparent 95%); */
+        border: 1px solid var(--brand);
+        border-radius: var(--radius-round);
+        padding-inline: var(--size-7);
+        padding-block: var(--size-3);
+
+        & p {
+            margin: 0;
+        }
     }
 }
 

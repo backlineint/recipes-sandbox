@@ -136,3 +136,79 @@ const recipeFromStore = await store.getObject({
 <p>
     (Drupal State Example)
 </p>
+
+---
+
+Next for Drupal Example:
+
+<h1>
+    ...similar
+</h1>
+<pre><code class="language-javascript">import { DrupalClient } from "next-drupal"
+// Create a new DrupalClient.
+const drupal = new DrupalClient("https://example.com")
+// Fetch articles.
+const articles = await drupal.getResourceCollection("node--article")
+// Fetch one article by id.
+const article = await drupal.getResource(
+  "node--article",
+  "f4c61473-8297-4bf3-bab7-21c9633a7ca7"
+)</code></pre>
+<p>
+    (Next for Drupal Client Example)
+</p>
+
+---
+
+Key Differences:
+
+<h1>
+    With Some Key Differences
+</h1>
+<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f978/512.gif" alt="🥸" width="250" height="250">
+<ul>
+    <li>
+        Serve slightly different needs and priorities
+    </li>
+    <li>
+        Some are framwework specific
+    </li>
+    <li>
+        Different sets of maintainers
+    </li>
+</ul>
+
+---
+
+Maybe We're Wrong:
+
+<h1>
+    Hey, maybe we're all wrong
+</h1>
+<p>
+    But I don't think so :)
+</p>
+
+---
+
+Funding Commitment:
+
+<h1>
+    Our Commitment for Pitch-burgh Funding
+</h1>
+<ul>
+    <li>
+        'Vertical Slice' POC
+    </li>
+    <li>
+        Proposal for Drupal JS Maintainers
+    </li>
+    <li>
+        json-api-client 1.0 release
+    </li>
+</ul>
+<aside>
+    <p>
+        Like SOWs? <a href="https://docs.google.com/document/d/1-_7PN9p0LSUIbZa-7EkLmdIO7kswSF65IY012yoWRis/edit#heading=h.k9vbodx1ps94" target="_blank">Here's ours.</a>
+    </p>
+</aside>
