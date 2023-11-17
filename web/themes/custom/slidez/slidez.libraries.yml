@@ -1,6 +1,7 @@
 base:
   version: VERSION
   js:
+    js/slidez-slide.js: {}
     https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js: { type: external, minified: true }
   css:
     base:
