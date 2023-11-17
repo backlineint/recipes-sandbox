@@ -79,6 +79,11 @@ slidez-slide {
         margin-top: var(--size-3);
     }
 
+    .field-content {
+        display: grid;
+        place-items: center;
+    }
+
     /* h1, h2, h3, h4, h5, h6, p, small, blockquote, li */
     & h1,
     p {
@@ -89,6 +94,10 @@ slidez-slide {
         font-size: var(--font-size-8);
         margin: 0;
         max-inline-size: var(--size-content-1);
+    }
+
+    & h3 {
+        color: var(--text-2);
     }
 
     & p,

@@ -260,3 +260,20 @@ Supporting use case:
     Just this week...
 </h1>
 <img class="box" src="/sites/default/files/inline-images/extend-slack.png" data-entity-uuid="4f41eb41-5f11-4218-9e71-d9b30f74c2af" data-entity-type="file" alt="A slack message about a possible use case">
+
+---
+
+POC Scope:
+
+<h1>
+    Vertical Slice POC Scope
+</h1>
+<h3>
+    Get a collection of resources for a specific resource type
+</h3>
+<ul>
+  <li>Establishes all client-level configuration options</li>
+  <li>Will make implementing future methods easier</li>
+  <li>Facilitate deeper discussion with community</li>
+</ul>
+<aside>Meta issue: <a href="https://www.drupal.org/project/api_client/issues/3365506" target="_new">#3365506</a></aside>
