@@ -113,3 +113,26 @@ Multiple Projects:
   <li>Next.js for Drupal Client</li>
   <li>Drupal Kit</li>
 </ul>
+
+---
+
+Drupal State Example:
+
+<h1>
+    They all... look...
+</h1>
+<pre><code class="language-javascript">import { DrupalState } from '@gdwc/drupal-state';
+const store = new DrupalState({
+  apiBase: 'https://dev-ds-demo.pantheonsite.io',
+  apiPrefix: 'jsonapi', // optional, defaults to 'jsonapi'
+});
+// Get recipies from API and store locally
+const recipesFromApi = await store.getObject({ objectName: 'node--recipe' });
+// Get existing article from local store
+const recipeFromStore = await store.getObject({
+  objectName: 'recipes',
+  id: '33386d32-a87c-44b9-b66b-3dd0bfc38dca',
+});</code></pre>
+<p>
+    (Drupal State Example)
+</p>
