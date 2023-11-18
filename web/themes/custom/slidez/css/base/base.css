@@ -146,3 +146,11 @@ slidez-slide h1 {
     display: inline;
     view-transition-name: title;
 }
+
+slidez-slide img {
+    view-transition-name: image;
+}
+
+slidez-slide aside {
+    view-transition-name: cta;
+}

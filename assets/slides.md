@@ -277,3 +277,203 @@ POC Scope:
   <li>Facilitate deeper discussion with community</li>
 </ul>
 <aside>Meta issue: <a href="https://www.drupal.org/project/api_client/issues/3365506" target="_new">#3365506</a></aside>
+
+---
+
+Basic Example
+
+<h1>
+    POC Released as 0.1.0!
+</h1>
+<pre><code class="language-plaintext">npm i @drupal-api-client/json-api-client</code></pre>
+<aside>
+    <p>
+        Demo: <a href="https://codesandbox.io/s/drupal-api-client-json-api-client-basic-example-54t589?file=/src/index.mjs" target="_blank">Basic Example</a>
+    </p>
+</aside>
+
+---
+
+Config options:
+
+<h1>
+    Proposed Configuration Options
+</h1>
+<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f916/512.gif" alt="🤖" width="250" height="250">
+<p>
+    Provide a default, but allow many possible overrides.
+</p>
+
+---
+
+Authentication: 
+
+<h1>
+    Authentication
+</h1>
+<h3>
+    Support common Drupal authentication approaches
+</h3>
+<p>
+    Start with basic auth.
+</p>
+<aside>
+    <p>
+        Issue <a href="https://www.drupal.org/project/api_client/issues/3376937">#3376937</a>
+    </p>
+</aside>
+
+---
+
+Auth Code:
+
+<pre><code class="language-javascript">import JsonApiClient from "@drupal-api-client/json-api-client";
+async function main() {
+  const client = new JsonApiClient(
+    "https://dev-drupal-api-client-poc.pantheonsite.io",
+    {
+      // the optional authentication object will be used to authenticate requests.
+      // Currently Basic auth is supported.
+      authentication: {
+        type: "Basic",
+        // It is recommended to store sensitive information in environment variables that
+        // are not checked in to the source code.
+        username: process.env.MY_USERNAME,
+        password: process.env.MY_SECRET_PASSWORD
+      }
+    }
+  );
+  const collection = await client.get("node--recipe");
+  console.log("Recipe collection", collection);
+}
+main();</code></pre>
+
+---
+
+Custom Fetch:
+
+<h1>
+    Custom Fetch
+</h1>
+<h3>
+    Allow users to bring their own fetch method
+</h3>
+<p>
+    Start with Fetch compatible APIs.
+</p>
+<aside>Issue <a href="https://www.drupal.org/project/api_client/issues/3376929">#3376929</a></aside>
+
+---
+
+Fetch Example:
+
+<pre class="box"><code class="language-javascript">import JsonApiClient from "@drupal-api-client/json-api-client";
+async function main() {
+  const client = new JsonApiClient(
+    "https://dev-drupal-api-client-poc.pantheonsite.io",
+    {
+      // supply a custom fetch method in order to add  certain headers to each request
+      // or any other logic you may need before the fetch call
+      customFetch: (input: RequestInfo | URL, init?: RequestInit) =&gt; {
+        const newHeaders = new Headers(init?.headers);
+        newHeaders.set("Content-Type", "application/json");
+        const newInit = {
+          ...init,
+          headers: newHeaders
+        };
+        return fetch(input, newInit);
+      }
+    }
+  );
+  const collection = await client.get("node--recipe");
+  console.log("Recipe collection", collection);
+}
+main();</code></pre>
+
+---
+
+Local Caching:
+
+<h1>
+    Local Caching
+</h1>
+<h3>
+    Cache data using the library of your choice
+</h3>
+<p>
+    Start with session storage example.
+</p>
+<aside>
+    <p>
+        Issue <a href="https://www.drupal.org/project/api_client/issues/3377144">#3377144</a> / <a href="https://codesandbox.io/s/drupal-api-client-json-api-client-cache-option-znkk9m?file=/src/index.ts" target="_blank">Demo</a>
+    </p>
+</aside>
+
+---
+
+Logging:
+
+<h1>
+    Logging
+</h1>
+<h3>
+    Log for debugging or to the service of your choice
+</h3>
+<p>
+    Ship with console log equivalents
+</p>
+<aside>
+    <p>
+        Issue <a href="https://www.drupal.org/project/api_client/issues/3377144">#3377144</a> / <a href="https://codesandbox.io/s/drupal-api-client-json-api-client-debug-option-w2n9fx?file=/src/index.ts" target="_blank">Demo</a>
+    </p>
+</aside>
+
+---
+
+Deserialization:
+
+<h1>
+    Deserialization
+</h1>
+<h3>
+    Convert response into simplified JS object
+</h3>
+<p>
+    Don't deserialize by default, but establish API
+</p>
+<aside>Issue <a href="https://www.drupal.org/project/api_client/issues/3377191" target="_blank">#3377191</a> / <a href="https://codesandbox.io/s/drupal-api-client-json-api-client-deserialization-example-7hsjgx?file=/src/index.ts" target="_blank">Demo</a></aside>
+
+---
+
+Localization:
+
+<h1>
+    Localization
+</h1>
+<h3>
+    Easily source content in different languages
+</h3>
+<pre class="box"><code class="language-javascript">import JsonApiClient from "@drupal-api-client/json-api-client";
+async function main() {
+  const client = new JsonApiClient(
+    "https://dev-drupal-api-client-poc.pantheonsite.io",
+    {
+      // The default locale will be in the URL of each request.
+      // example: https://drupal.example.com/en/jsonapi/node/article
+      defaultLocale: "en",
+    }
+  );
+  const collection = await client.get("node--recipe");
+  console.log("Recipe collection", collection);
+}
+main();</code></pre>
+<aside>
+    <p>
+        Issue <a href="https://www.drupal.org/project/api_client/issues/3377803">#3377803</a>
+    </p>
+</aside>
+
+---
+
+Query Params:
+
